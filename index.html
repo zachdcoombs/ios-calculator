@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iOS Style Calculator</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<main id="calculator">
-    <div class="container">
-        <div class="display"></div>
-        
-    </div>
-</main>
-</body>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="calc ya later" content="width=device-width">
+    <title>iCalculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <!-- calculator screen -->
+                <div class="panel"><p class="result">1234</p></div>
+
+                <!-- buttons -->
+                <table>
+                    <!-- top row -->
+                    <tr>
+                        <td><button type="button" class="clear" value="clear" data-key="8">AC</button></td>
+                        <td><button type="button" class="sign" value="sign" data-key="192">+/-</button></td>
+                        <td><button type="button" class="percent" value="percent" data-key="80">%</button></td>
+                        <td><button type="button" class="operator" value="/" data-key="68">÷</button></td>
+                    </tr>
+                    <!-- second row -->
+                    <tr>
+                        <td><button type="button" class="operand" value="7" data-key="55">7</button></td>
+                        <td><button type="button" class="operand" value="8" data-key="56">8</button></td>
+                        <td><button type="button" class="operand" value="9" data-key="57">9</button></td>
+                        <td><button type="button" class="operator" value="*" data-key="88">×</button></td>
+                    </tr>
+                    <!-- third row -->
+                    <tr>
+                        <td><button type="button" class="operand" value="4" data-key="52">4</button></td>
+                        <td><button type="button" class="operand" value="5" data-key="53">5</button></td>
+                        <td><button type="button" class="operand" value="6" data-key="54">6</button></td>
+                        <td><button type="button" class="operator" value="-" data-key="173">-</button></td>
+                    </tr>
+                    <!-- fourth row -->
+                    <tr>
+                        <td><button type="button" class="operand" value="1" data-key="49">1</button></td>
+                        <td><button type="button" class="operand" value="2" data-key="50">2</button></td>
+                        <td><button type="button" class="operand" value="3" data-key="51">3</button></td>
+                        <td><button type="button" class="operator" value="+" data-key="61">+</button></td>
+                    </tr>
+                    <!-- fifth row -->
+                    <tr>
+                        <td colspan="2"><button type="button" id ="zero" class="operand" value="0" data-key="48">0</button></td>
+                        <td><button type="button" class="decimal" value="." data-key="190">.</button></td>
+                        <td><button type="button" class="equals" value="=" data-key="69">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    <script src="script.js"></script>
+    </body>
 </html>
